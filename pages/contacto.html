@@ -1,0 +1,75 @@
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Teruggi y Broger</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            position: relative;
+            background: url('.fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <div class="background-overlay"></div>
+    <style>
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.4);
+            z-index: -1;
+        }
+    </style>
+    <div id="navbar-placeholder"></div>
+    
+    <header class="text-white py-5 bg-primary text-center">
+        <div class="container">
+            <h1>Contacto</h1>
+        </div>
+    </header>
+    
+    <main class="container my-5">
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </main>
+    
+    <footer class="text-white py-4 bg-dark text-center">
+        <div class="container">
+            <a href="https://wa.me/tu-numero-de-whatsapp" class="me-3">
+                <img src="whatsapp.png" alt="WhatsApp" width="30">
+            </a>
+            <a href="https://www.linkedin.com/in/rolando-broger-caia-6258137/?originalSubdomain=cl">
+                <img src="Linkedin.png" alt="LinkedIn" width="30">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        fetch("../navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>

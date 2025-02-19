@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Teruggi y Broger</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            position: relative;
+            background: url('fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <div class="background-overlay"></div>
+    <style>
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.4);
+            z-index: -1;
+        }
+    </style>
+    <div id="navbar-placeholder"></div>
+    
+    <header class="text-white py-5 bg-primary text-center">
+        <div class="container">
+            <h1>Bienvenido a Teruggi y Broger Asesores Financieros</h1>
+        </div>
+    </header>
+    
+    <div id="carouselExample" class="carousel slide my-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    
+    <main class="container my-5">
+        <section class="text-center py-5 bg-light rounded">
+            <h2>Hace de tu bienestar financiero tu mejor inversión</h2>
+        </section>
+        <section class="row">
+            <div class="col-md-4"><h2>Sobre Nosotros</h2><p>Expertos en las adversidades del mercado actual</p></div>
+            <div class="col-md-4"><h2>Nuestros Servicios</h2><p>una asesoría completa para proteger tu patrimonio</p></div>
+            <div class="col-md-4"><h2>Misión</h2><p>cuidar tu bienestar económico para que te dediques a tu bienestar personal</p></div>
+        </section>
+    </main>
+    
+    <footer class="text-white py-4 bg-dark text-center">
+        <div class="container">
+            <a href="https://wa.me/tu-numero-de-whatsapp" class="me-3">
+                <img src="whatsapp.png" alt="WhatsApp" width="30">
+            </a>
+            <a href="https://www.linkedin.com/in/rolando-broger-caia-6258137/?originalSubdomain=cl">
+                <img src="Linkedin.png" alt="LinkedIn" width="30">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
+</body>
+</html>

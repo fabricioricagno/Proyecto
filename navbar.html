@@ -1,0 +1,30 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/pages/quienessomos.html">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/fondos.html">Fondos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let navbarPath = window.location.pathname.includes("/pages/") ? "/navbar.html" : "navbar.html";
+        fetch(navbarPath)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error cargando navbar.html:", error));
+    });
+</script>
