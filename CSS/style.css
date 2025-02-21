@@ -3,7 +3,7 @@
 /* Estilo general de la página */
 body {
     font-family: Arial, sans-serif;
-    background: url('city-financial.jpg') no-repeat center center fixed;
+    background: url('../img/city-financial.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     color: white;

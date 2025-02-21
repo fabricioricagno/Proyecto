@@ -5,65 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos - Teruggi y Broger</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <style>
         body {
             position: relative;
-            background: url('fondo.jpg') no-repeat center center fixed;
+            background: url('../img/fondo.jpg') no-repeat center center fixed;
             background-size: cover;
             background-position: center;
         }
-    </style>
-    <div class="background-overlay"></div>
-    <style>
-        .background-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.4);
-            z-index: -1;
+        h2.text-center, p.text-center {
+            color: black; /* Cambia el color del texto a negro para mejor visibilidad */
         }
     </style>
+    <div class="background-overlay"></div>
     <div id="navbar-placeholder"></div>
     
     <header class="text-white py-5 bg-primary text-center">
         <div class="container">
             <h1>Quiénes Somos</h1>
+            <nav>
+                <a href="../index.html" style="color: white;">Inicio</a> |
+                <a href="quienessomos.html" style="color: white;">Quiénes Somos</a> |
+                <a href="servicios.html" style="color: white;">Servicios</a> |
+                <a href="fondos.html" style="color: white;">Fondos</a> |
+                <a href="contacto.html" style="color: white;">Contacto</a>
+            </nav>
             <p class="fs-5">Expertos en activos financieros, maximizando su rentabilidad con experiencia y visión.</p>
         </div>
     </header>
     
     <main class="container my-5">
-        <section class="row text-center">
-            <div class="col-md-6">
-                <img src="ejecutivo1.webp" alt="Persona 1" class="img-fluid rounded-circle">
-                <h4>Nombre Persona 1</h4>
-            </div>
-            <div class="col-md-6">
-                <img src="Ejecutivo2 .webp" alt="Persona 2" class="img-fluid rounded-circle">
-                <h4>Nombre Persona 2</h4>
-            </div>
+        <section class="mt-5">
+            <h2 class="text-center">Nuestra Historia</h2>
+            <p class="text-center">Con una trayectoria de más de 20 años en el mundo de los activos financieros, hemos asesorado a grandes capitales en la optimización de sus inversiones y en la obtención de la máxima rentabilidad.</p>
+            <p class="text-center">Nuestro equipo, conformado por dos profesionales altamente capacitados, cuenta con una vasta experiencia en el análisis de mercados, la identificación de oportunidades de inversión y la gestión de riesgos.</p>
+            <p class="text-center">Nos especializamos en el diseño de estrategias financieras personalizadas, adaptadas a las necesidades y objetivos de cada cliente.</p>
         </section>
-        <section>
-            <h2>Nuestra Historia</h2>
-            <p>Con una trayectoria de más de 20 años en el mundo de los activos financieros, hemos asesorado a grandes capitales en la optimización de sus inversiones y en la obtención de la máxima rentabilidad.</p>
-            <p>Nuestro equipo, conformado por dos profesionales altamente capacitados, cuenta con una vasta experiencia en el análisis de mercados, la identificación de oportunidades de inversión y la gestión de riesgos.</p>
-            <p>Nos especializamos en el diseño de estrategias financieras personalizadas, adaptadas a las necesidades y objetivos de cada cliente.</p>
+        <section class="row text-center justify-content-center mt-5">
+            <div class="col-md-5">
+                <img src="../img/ejecutivo1.webp" alt="Angeles Terrugi" class="img-fluid rounded-circle mb-3">
+                <h4>Angeles Terrugi</h4>
+            </div>
+            <div class="col-md-5">
+                <img src="../img/Ejecutivo2 .webp" alt="Rolando Broger" class="img-fluid rounded-circle mb-3">
+                <h4>Rolando Broger</h4>
+            </div>
         </section>
     </main>
     
     <footer class="text-white py-4 bg-dark text-center">
         <div class="container">
             <a href="https://wa.me/tu-numero-de-whatsapp" class="me-3">
-                <img src="whatsapp.png" alt="WhatsApp" width="30">
+                <img src="../img/whatsapp.png" alt="WhatsApp" width="30">
             </a>
             <a href="https://www.linkedin.com/in/rolando-broger-caia-6258137/?originalSubdomain=cl">
-                <img src="Linkedin.png" alt="LinkedIn" width="30">
+                <img src="../img/Linkedin.png" alt="LinkedIn" width="30">
             </a>
         </div>
     </footer>
